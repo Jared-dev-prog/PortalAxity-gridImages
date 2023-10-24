@@ -1,6 +1,6 @@
-import * as React from 'react';
-import { IGridImagesProps } from './IGridImagesProps';
-export default class GridImages extends React.Component<IGridImagesProps, {}> {
-    render(): React.ReactElement<IGridImagesProps>;
-}
+import * as React from "react";
+import { IGridImagesProps } from "./IGridImagesProps";
+import "@pnp/sp/lists";
+declare const GridImages: React.FC<IGridImagesProps>;
+export default GridImages;
 //# sourceMappingURL=GridImages.d.ts.map

@@ -4,5 +4,6 @@ export interface IGridImagesProps {
     environmentMessage: string;
     hasTeamsContext: boolean;
     userDisplayName: string;
+    urlAbsolute: string;
 }
 //# sourceMappingURL=IGridImagesProps.d.ts.map

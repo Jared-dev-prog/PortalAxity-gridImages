@@ -4,4 +4,5 @@ export interface IGridImagesProps {
   environmentMessage: string;
   hasTeamsContext: boolean;
   userDisplayName: string;
+  urlAbsolute: string;
 }
