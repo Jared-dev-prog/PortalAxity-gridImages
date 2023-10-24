@@ -1,0 +1,18 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/spfx-build/config.2.0.schema.json",
+  "version": "2.0",
+  "bundles": {
+    "grid-images-web-part": {
+      "components": [
+        {
+          "entrypoint": "./lib/webparts/gridImages/GridImagesWebPart.js",
+          "manifest": "./src/webparts/gridImages/GridImagesWebPart.manifest.json"
+        }
+      ]
+    }
+  },
+  "externals": {},
+  "localizedResources": {
+    "GridImagesWebPartStrings": "lib/webparts/gridImages/loc/{locale}.js"
+  }
+}
