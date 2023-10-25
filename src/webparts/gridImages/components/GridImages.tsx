@@ -7,34 +7,36 @@ import "@pnp/sp/lists";
 import styles from "./GridImages.module.scss";
 
 const GridImages: React.FC<IGridImagesProps> = (props) => {
-  const { urlAbsolute } = props;
+  const { urlAbsolute, description } = props;
+  const [list, setList] = React.useState<any[]>([]);
 
-  const [list, setList] = React.useState<ItemImages[]>([]);
+  console.log(description);
 
   React.useEffect(() => {
-    sp.setup({
-      sp: {
-        baseUrl: urlAbsolute,
-      },
-    });
-
-    sp.web.lists
-      .getByTitle("listGrid1")
-      .items.get()
-      .then((response: ItemImages[]) => {
-        const newArrayImage =
-          response !== undefined
-            ? response.sort((a, b) => a.order - b.order)
-            : [];
-        setList(newArrayImage);
-      })
-      .catch((error) => {
-        alert("Error al obtener elementos de la lista:");
+    function getList() {
+      sp.setup({
+        sp: {
+          baseUrl: urlAbsolute,
+        },
       });
-  }, []);
 
+      sp.web.lists
+        .getByTitle(description)
+        .items.get()
+        .then((response: any[]) => {
+          const newArrayImage =
+            response !== undefined ? response.sort((a, b) => a.order - b.order) : [];
+          setList(newArrayImage);
+        })
+        .catch((error) => {
+          console.error("Error al obtener elementos de la lista:", error);
+        });
+    }
+
+    getList();
+  }, [description]);
   return (
-    <div className={styles.containerImages}>
+    <div className="background">
       {list.length !== 0 ? (
         list.map((item, index) => (
           <CardImage

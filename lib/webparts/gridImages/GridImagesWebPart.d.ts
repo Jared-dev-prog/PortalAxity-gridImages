@@ -14,6 +14,7 @@ export default class GridImagesWebPart extends BaseClientSideWebPart<IGridImages
     protected onThemeChanged(currentTheme: IReadonlyTheme | undefined): void;
     protected onDispose(): void;
     protected get dataVersion(): Version;
+    protected get disableReactivePropertyChanges(): boolean;
     protected getPropertyPaneConfiguration(): IPropertyPaneConfiguration;
 }
 //# sourceMappingURL=GridImagesWebPart.d.ts.map

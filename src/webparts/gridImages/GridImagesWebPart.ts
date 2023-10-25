@@ -100,19 +100,23 @@ export default class GridImagesWebPart extends BaseClientSideWebPart<IGridImages
     return Version.parse("1.0");
   }
 
+  protected get disableReactivePropertyChanges(): boolean {
+    return true;
+  }
+
   protected getPropertyPaneConfiguration(): IPropertyPaneConfiguration {
     return {
       pages: [
         {
           header: {
-            description: strings.PropertyPaneDescription,
+            description: "Description",
           },
           groups: [
             {
-              groupName: strings.BasicGroupName,
+              groupName: "Properties",
               groupFields: [
                 PropertyPaneTextField("description", {
-                  label: strings.DescriptionFieldLabel,
+                  label: "",
                 }),
               ],
             },
