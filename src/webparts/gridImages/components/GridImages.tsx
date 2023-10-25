@@ -4,7 +4,6 @@ import CardImage from "./CardImage";
 
 import { sp } from "@pnp/sp/presets/all";
 import "@pnp/sp/lists";
-import styles from "./GridImages.module.scss";
 
 const GridImages: React.FC<IGridImagesProps> = (props) => {
   const { urlAbsolute, description } = props;
@@ -23,7 +22,7 @@ const GridImages: React.FC<IGridImagesProps> = (props) => {
       sp.web.lists
         .getByTitle(description)
         .items.get()
-        .then((response: any[]) => {
+        .then((response: ItemImages[]) => {
           const newArrayImage =
             response !== undefined ? response.sort((a, b) => a.order - b.order) : [];
           setList(newArrayImage);
