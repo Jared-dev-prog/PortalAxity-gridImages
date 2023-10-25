@@ -24,7 +24,7 @@
       "description": {
         "default": "gridImages description"
       },
-      "officeFabricIconFontName": "Page",
+      "officeFabricIconFontName": "ImageDiff",
       "properties": {
         "description": "gridImages"
       }

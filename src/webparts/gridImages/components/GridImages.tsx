@@ -7,7 +7,7 @@ import "@pnp/sp/lists";
 import styles from "./GridImages.module.scss";
 
 const GridImages: React.FC<IGridImagesProps> = (props) => {
-  const { urlAbsolute } = props;
+  const { urlAbsolute, nameList } = props;
 
   const [list, setList] = React.useState<ItemImages[]>([]);
 
@@ -19,19 +19,17 @@ const GridImages: React.FC<IGridImagesProps> = (props) => {
     });
 
     sp.web.lists
-      .getByTitle("listGrid1")
+      .getByTitle(nameList)
       .items.get()
       .then((response: ItemImages[]) => {
         const newArrayImage =
-          response !== undefined
-            ? response.sort((a, b) => a.order - b.order)
-            : [];
+          response !== undefined ? response.sort((a, b) => a.order - b.order) : [];
         setList(newArrayImage);
       })
       .catch((error) => {
         alert("Error al obtener elementos de la lista:");
       });
-  }, []);
+  }, [nameList]);
 
   return (
     <div className={styles.containerImages}>

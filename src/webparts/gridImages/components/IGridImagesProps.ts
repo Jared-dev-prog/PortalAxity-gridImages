@@ -5,6 +5,7 @@ export interface IGridImagesProps {
   hasTeamsContext: boolean;
   userDisplayName: string;
   urlAbsolute: string;
+  nameList: string;
 }
 export interface ItemImages {
   image: string;
