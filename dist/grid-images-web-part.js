@@ -574,6 +574,24 @@ module.exports = __WEBPACK_EXTERNAL_MODULE__Cc__;
 
 /***/ }),
 
+/***/ "/jfi":
+/*!************************************************************************************************************************************************************!*\
+  !*** ./node_modules/css-loader/dist/cjs.js!./node_modules/postcss-loader/dist/cjs.js??ref--6-2!./lib/webparts/gridImages/components/GridImages.module.css ***!
+  \************************************************************************************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+// Imports
+var ___CSS_LOADER_API_IMPORT___ = __webpack_require__(/*! ../../../../node_modules/css-loader/dist/runtime/api.js */ "JPst");
+exports = ___CSS_LOADER_API_IMPORT___(false);
+// Module
+exports.push([module.i, ".containerImages_65d2e409{-ms-flex-pack:center;display:-ms-flexbox;display:flex;-ms-flex-wrap:wrap;flex-wrap:wrap;justify-content:center;width:100%}.content_item_images_65d2e409{height:auto;max-height:350px;min-height:auto}._item_Images_65d2e409{height:100%;margin:10px;max-height:100%;min-height:100%}.only_images_65d2e409{-ms-flex-pack:center;-ms-flex-align:center;align-items:center;display:-ms-flexbox;display:flex;justify-content:center}.img_65d2e409,.img_back_65d2e409,.only_images_65d2e409{height:100%;width:100%}.img_back_65d2e409{padding:15px}.text_images_65d2e409{height:70%;width:100%}._label_65d2e409{color:#3c1053;font-family:Segoe UI;font-size:15px;font-weight:700;margin:10px;text-align:center}.bg_1_65d2e409{background:linear-gradient(314deg,#963cbd,#ff832a);border-radius:16px}.bg_2_65d2e409{background:linear-gradient(314deg,#783cbd,#04d6ff);border-radius:16px}.bg_3_65d2e409{background:linear-gradient(314deg,#963cbd,#f4364c);border-radius:16px}.bg_4_65d2e409{background:linear-gradient(314deg,#3c1053,#963cbd);border-radius:16px}.bg_5_65d2e409{background:linear-gradient(314deg,#963cbd,#3cfe90);border-radius:16px}.default_65d2e409{background:0 0;border-radius:16px}", ""]);
+// Exports
+module.exports = exports;
+
+
+/***/ }),
+
 /***/ "01TU":
 /*!*********************************************************!*\
   !*** ./node_modules/@pnp/odata/invokable-extensions.js ***!
@@ -7570,6 +7588,39 @@ module.exports = __WEBPACK_EXTERNAL_MODULE_I6O9__;
 
 /***/ }),
 
+/***/ "IBD+":
+/*!**********************************************************************!*\
+  !*** ./lib/webparts/gridImages/components/GridImages.module.scss.js ***!
+  \**********************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* tslint:disable */
+__webpack_require__(/*! ./GridImages.module.css */ "R7s8");
+var styles = {
+    containerImages: 'containerImages_65d2e409',
+    content_item_images: 'content_item_images_65d2e409',
+    _item_Images: '_item_Images_65d2e409',
+    only_images: 'only_images_65d2e409',
+    img: 'img_65d2e409',
+    img_back: 'img_back_65d2e409',
+    text_images: 'text_images_65d2e409',
+    _label: '_label_65d2e409',
+    bg_1: 'bg_1_65d2e409',
+    bg_2: 'bg_2_65d2e409',
+    bg_3: 'bg_3_65d2e409',
+    bg_4: 'bg_4_65d2e409',
+    bg_5: 'bg_5_65d2e409',
+    default: 'default_65d2e409'
+};
+/* harmony default export */ __webpack_exports__["default"] = (styles);
+/* tslint:enable */ 
+
+
+/***/ }),
+
 /***/ "J7sA":
 /*!*********************************************!*\
   !*** ./node_modules/@pnp/sp/lists/index.js ***!
@@ -7612,6 +7663,111 @@ __webpack_require__.r(__webpack_exports__);
 
 Object(_pnp_odata__WEBPACK_IMPORTED_MODULE_0__["addProp"])(_folders_types_js__WEBPACK_IMPORTED_MODULE_1__["_Folder"], "files", _types_js__WEBPACK_IMPORTED_MODULE_2__["Files"]);
 //# sourceMappingURL=folder.js.map
+
+/***/ }),
+
+/***/ "JPst":
+/*!*****************************************************!*\
+  !*** ./node_modules/css-loader/dist/runtime/api.js ***!
+  \*****************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+/*
+  MIT License http://www.opensource.org/licenses/mit-license.php
+  Author Tobias Koppers @sokra
+*/
+// css base code, injected by the css-loader
+// eslint-disable-next-line func-names
+module.exports = function (useSourceMap) {
+  var list = []; // return the list of modules as css string
+
+  list.toString = function toString() {
+    return this.map(function (item) {
+      var content = cssWithMappingToString(item, useSourceMap);
+
+      if (item[2]) {
+        return "@media ".concat(item[2], " {").concat(content, "}");
+      }
+
+      return content;
+    }).join('');
+  }; // import a list of modules into the list
+  // eslint-disable-next-line func-names
+
+
+  list.i = function (modules, mediaQuery, dedupe) {
+    if (typeof modules === 'string') {
+      // eslint-disable-next-line no-param-reassign
+      modules = [[null, modules, '']];
+    }
+
+    var alreadyImportedModules = {};
+
+    if (dedupe) {
+      for (var i = 0; i < this.length; i++) {
+        // eslint-disable-next-line prefer-destructuring
+        var id = this[i][0];
+
+        if (id != null) {
+          alreadyImportedModules[id] = true;
+        }
+      }
+    }
+
+    for (var _i = 0; _i < modules.length; _i++) {
+      var item = [].concat(modules[_i]);
+
+      if (dedupe && alreadyImportedModules[item[0]]) {
+        // eslint-disable-next-line no-continue
+        continue;
+      }
+
+      if (mediaQuery) {
+        if (!item[2]) {
+          item[2] = mediaQuery;
+        } else {
+          item[2] = "".concat(mediaQuery, " and ").concat(item[2]);
+        }
+      }
+
+      list.push(item);
+    }
+  };
+
+  return list;
+};
+
+function cssWithMappingToString(item, useSourceMap) {
+  var content = item[1] || ''; // eslint-disable-next-line prefer-destructuring
+
+  var cssMapping = item[3];
+
+  if (!cssMapping) {
+    return content;
+  }
+
+  if (useSourceMap && typeof btoa === 'function') {
+    var sourceMapping = toComment(cssMapping);
+    var sourceURLs = cssMapping.sources.map(function (source) {
+      return "/*# sourceURL=".concat(cssMapping.sourceRoot || '').concat(source, " */");
+    });
+    return [content].concat(sourceURLs).concat([sourceMapping]).join('\n');
+  }
+
+  return [content].join('\n');
+} // Adapted from convert-source-map (MIT)
+
+
+function toComment(sourceMap) {
+  // eslint-disable-next-line no-undef
+  var base64 = btoa(unescape(encodeURIComponent(JSON.stringify(sourceMap))));
+  var data = "sourceMappingURL=data:application/json;charset=utf-8;base64,".concat(base64);
+  return "/*# ".concat(data, " */");
+}
 
 /***/ }),
 
@@ -8795,6 +8951,28 @@ Object(_pnp_odata__WEBPACK_IMPORTED_MODULE_0__["addProp"])(_webs_types_js__WEBPA
 
 /***/ }),
 
+/***/ "Md5o":
+/*!*********************************!*\
+  !*** ./lib/constants/routes.js ***!
+  \*********************************/
+/*! exports provided: ROUTES, NAMELIST */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ROUTES", function() { return ROUTES; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "NAMELIST", function() { return NAMELIST; });
+var ROUTES = {
+    generic: "https://intellego365.sharepoint.com",
+    iconSoftSkills: "../assets/icon.svg",
+};
+var NAMELIST = {
+    expert: "listaExpertos",
+};
+
+
+/***/ }),
+
 /***/ "MkPD":
 /*!**********************************************!*\
   !*** ./node_modules/@pnp/sp/search/query.js ***!
@@ -9587,6 +9765,25 @@ var _RelatedItemManager = /** @class */ (function (_super) {
 
 var RelatedItemManager = function (url) { return new _RelatedItemManager(Object(_utils_extractweburl_js__WEBPACK_IMPORTED_MODULE_2__["extractWebUrl"])(typeof url === "string" ? url : url.toUrl())); };
 //# sourceMappingURL=types.js.map
+
+/***/ }),
+
+/***/ "R7s8":
+/*!******************************************************************!*\
+  !*** ./lib/webparts/gridImages/components/GridImages.module.css ***!
+  \******************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+var content = __webpack_require__(/*! !../../../../node_modules/css-loader/dist/cjs.js!../../../../node_modules/postcss-loader/dist/cjs.js??ref--6-2!./GridImages.module.css */ "/jfi");
+var loader = __webpack_require__(/*! ./node_modules/@microsoft/load-themed-styles/lib/index.js */ "xMn6");
+
+if(typeof content === "string") content = [[module.i, content]];
+
+// add the styles to the DOM
+for (var i = 0; i < content.length; i++) loader.loadStyles(content[i][1], true);
+
+if(content.locals) module.exports = content.locals;
 
 /***/ }),
 
@@ -13190,6 +13387,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _CardImage__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./CardImage */ "ud/B");
 /* harmony import */ var _pnp_sp_presets_all__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @pnp/sp/presets/all */ "F/m7");
 /* harmony import */ var _pnp_sp_lists__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @pnp/sp/lists */ "J7sA");
+/* harmony import */ var _GridImages_module_scss__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./GridImages.module.scss */ "IBD+");
+
 
 
 
@@ -13207,14 +13406,16 @@ var GridImages = function (props) {
             .getByTitle("listGrid1")
             .items.get()
             .then(function (response) {
-            var newArrayImage = response !== undefined ? response.sort(function (a, b) { return a.order - b.order; }) : [];
+            var newArrayImage = response !== undefined
+                ? response.sort(function (a, b) { return a.order - b.order; })
+                : [];
             setList(newArrayImage);
         })
             .catch(function (error) {
-            console.error("Error al obtener elementos de la lista:", error);
+            alert("Error al obtener elementos de la lista:");
         });
     }, []);
-    return (react__WEBPACK_IMPORTED_MODULE_0__["createElement"]("div", null, list.length !== 0 ? (list.map(function (image, index) { return react__WEBPACK_IMPORTED_MODULE_0__["createElement"](_CardImage__WEBPACK_IMPORTED_MODULE_1__["default"], { key: index, label: image.label }); })) : (react__WEBPACK_IMPORTED_MODULE_0__["createElement"](react__WEBPACK_IMPORTED_MODULE_0__["Fragment"], null, "No existen resultados"))));
+    return (react__WEBPACK_IMPORTED_MODULE_0__["createElement"]("div", { className: _GridImages_module_scss__WEBPACK_IMPORTED_MODULE_4__["default"].containerImages }, list.length !== 0 ? (list.map(function (item, index) { return (react__WEBPACK_IMPORTED_MODULE_0__["createElement"](_CardImage__WEBPACK_IMPORTED_MODULE_1__["default"], { key: index, label: item.label, image: item.image, sizeWith: item.sizeWith, backgroud: item.backgroud, order: item.order, link: item.link, typeLink: item.typeLink })); })) : (react__WEBPACK_IMPORTED_MODULE_0__["createElement"](react__WEBPACK_IMPORTED_MODULE_0__["Fragment"], null, "No existen resultados"))));
 };
 /* harmony default export */ __webpack_exports__["default"] = (GridImages);
 
@@ -18667,12 +18868,34 @@ Object(_pnp_odata__WEBPACK_IMPORTED_MODULE_0__["addProp"])(_webs_types_js__WEBPA
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "cDcd");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _constants_routes__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../../constants/routes */ "Md5o");
+/* harmony import */ var _GridImages_module_scss__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./GridImages.module.scss */ "IBD+");
+
+
 
 var CardImage = function (props) {
-    return (react__WEBPACK_IMPORTED_MODULE_0__["createElement"]("div", null,
-        props.label,
-        " ",
-        react__WEBPACK_IMPORTED_MODULE_0__["createElement"]("button", { type: "button", className: "btn btn-primary" }, "Primary")));
+    var _a = react__WEBPACK_IMPORTED_MODULE_0__["useState"](""), urlImages = _a[0], setUrlImages = _a[1];
+    react__WEBPACK_IMPORTED_MODULE_0__["useEffect"](function () {
+        var objectPhoto = JSON.parse(props.image);
+        var urlPhoto = "".concat(_constants_routes__WEBPACK_IMPORTED_MODULE_1__["ROUTES"].generic).concat(objectPhoto.serverRelativeUrl);
+        setUrlImages(urlPhoto);
+    }, []);
+    return (react__WEBPACK_IMPORTED_MODULE_0__["createElement"]("div", { className: "".concat(props.sizeWith) },
+        react__WEBPACK_IMPORTED_MODULE_0__["createElement"]("div", { className: "".concat(_GridImages_module_scss__WEBPACK_IMPORTED_MODULE_2__["default"].content_item_images) },
+            react__WEBPACK_IMPORTED_MODULE_0__["createElement"]("div", { className: _GridImages_module_scss__WEBPACK_IMPORTED_MODULE_2__["default"]._item_Images },
+                react__WEBPACK_IMPORTED_MODULE_0__["createElement"]("div", { className: _GridImages_module_scss__WEBPACK_IMPORTED_MODULE_2__["default"].only_images },
+                    react__WEBPACK_IMPORTED_MODULE_0__["createElement"]("img", { className: "".concat(props.backgroud === "bg_1"
+                            ? _GridImages_module_scss__WEBPACK_IMPORTED_MODULE_2__["default"].bg_1
+                            : props.backgroud === "bg_2"
+                                ? _GridImages_module_scss__WEBPACK_IMPORTED_MODULE_2__["default"].bg_2
+                                : props.backgroud === "bg_3"
+                                    ? _GridImages_module_scss__WEBPACK_IMPORTED_MODULE_2__["default"].bg_3
+                                    : props.backgroud === "bg_4"
+                                        ? _GridImages_module_scss__WEBPACK_IMPORTED_MODULE_2__["default"].bg_4
+                                        : props.backgroud === "bg_5"
+                                            ? _GridImages_module_scss__WEBPACK_IMPORTED_MODULE_2__["default"].bg_5
+                                            : _GridImages_module_scss__WEBPACK_IMPORTED_MODULE_2__["default"].default, " ").concat(props.backgroud ? _GridImages_module_scss__WEBPACK_IMPORTED_MODULE_2__["default"].img_back : _GridImages_module_scss__WEBPACK_IMPORTED_MODULE_2__["default"].img), src: urlImages, alt: "" })))),
+        react__WEBPACK_IMPORTED_MODULE_0__["createElement"]("div", null, props.label !== "" ? (react__WEBPACK_IMPORTED_MODULE_0__["createElement"]("div", { className: _GridImages_module_scss__WEBPACK_IMPORTED_MODULE_2__["default"]._label }, props.label)) : (""))));
 };
 /* harmony default export */ __webpack_exports__["default"] = (CardImage);
 
@@ -19353,6 +19576,365 @@ __webpack_require__.r(__webpack_exports__);
 
 
 //# sourceMappingURL=index.js.map
+
+/***/ }),
+
+/***/ "xMn6":
+/*!*****************************************************************!*\
+  !*** ./node_modules/@microsoft/load-themed-styles/lib/index.js ***!
+  \*****************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+/* WEBPACK VAR INJECTION */(function(global) {
+/**
+ * An IThemingInstruction can specify a rawString to be preserved or a theme slot and a default value
+ * to use if that slot is not specified by the theme.
+ */
+var __assign = (this && this.__assign) || Object.assign || function(t) {
+    for (var s, i = 1, n = arguments.length; i < n; i++) {
+        s = arguments[i];
+        for (var p in s) if (Object.prototype.hasOwnProperty.call(s, p))
+            t[p] = s[p];
+    }
+    return t;
+};
+Object.defineProperty(exports, "__esModule", { value: true });
+// IE needs to inject styles using cssText. However, we need to evaluate this lazily, so this
+// value will initialize as undefined, and later will be set once on first loadStyles injection.
+var _injectStylesWithCssText;
+// Store the theming state in __themeState__ global scope for reuse in the case of duplicate
+// load-themed-styles hosted on the page.
+var _root = (typeof window === 'undefined') ? global : window; // tslint:disable-line:no-any
+var _themeState = initializeThemeState();
+/**
+ * Matches theming tokens. For example, "[theme: themeSlotName, default: #FFF]" (including the quotes).
+ */
+// tslint:disable-next-line:max-line-length
+var _themeTokenRegex = /[\'\"]\[theme:\s*(\w+)\s*(?:\,\s*default:\s*([\\"\']?[\.\,\(\)\#\-\s\w]*[\.\,\(\)\#\-\w][\"\']?))?\s*\][\'\"]/g;
+/** Maximum style text length, for supporting IE style restrictions. */
+var MAX_STYLE_CONTENT_SIZE = 10000;
+var now = function () { return (typeof performance !== 'undefined' && !!performance.now) ? performance.now() : Date.now(); };
+function measure(func) {
+    var start = now();
+    func();
+    var end = now();
+    _themeState.perf.duration += end - start;
+}
+/**
+ * initialize global state object
+ */
+function initializeThemeState() {
+    var state = _root.__themeState__ || {
+        theme: undefined,
+        lastStyleElement: undefined,
+        registeredStyles: []
+    };
+    if (!state.runState) {
+        state = __assign({}, (state), { perf: {
+                count: 0,
+                duration: 0
+            }, runState: {
+                flushTimer: 0,
+                mode: 0 /* sync */,
+                buffer: []
+            } });
+    }
+    if (!state.registeredThemableStyles) {
+        state = __assign({}, (state), { registeredThemableStyles: [] });
+    }
+    _root.__themeState__ = state;
+    return state;
+}
+/**
+ * Loads a set of style text. If it is registered too early, we will register it when the window.load
+ * event is fired.
+ * @param {string | ThemableArray} styles Themable style text to register.
+ * @param {boolean} loadAsync When true, always load styles in async mode, irrespective of current sync mode.
+ */
+function loadStyles(styles, loadAsync) {
+    if (loadAsync === void 0) { loadAsync = false; }
+    measure(function () {
+        var styleParts = Array.isArray(styles) ? styles : splitStyles(styles);
+        if (_injectStylesWithCssText === undefined) {
+            _injectStylesWithCssText = shouldUseCssText();
+        }
+        var _a = _themeState.runState, mode = _a.mode, buffer = _a.buffer, flushTimer = _a.flushTimer;
+        if (loadAsync || mode === 1 /* async */) {
+            buffer.push(styleParts);
+            if (!flushTimer) {
+                _themeState.runState.flushTimer = asyncLoadStyles();
+            }
+        }
+        else {
+            applyThemableStyles(styleParts);
+        }
+    });
+}
+exports.loadStyles = loadStyles;
+/**
+ * Allows for customizable loadStyles logic. e.g. for server side rendering application
+ * @param {(processedStyles: string, rawStyles?: string | ThemableArray) => void}
+ * a loadStyles callback that gets called when styles are loaded or reloaded
+ */
+function configureLoadStyles(loadStylesFn) {
+    _themeState.loadStyles = loadStylesFn;
+}
+exports.configureLoadStyles = configureLoadStyles;
+/**
+ * Configure run mode of load-themable-styles
+ * @param mode load-themable-styles run mode, async or sync
+ */
+function configureRunMode(mode) {
+    _themeState.runState.mode = mode;
+}
+exports.configureRunMode = configureRunMode;
+/**
+ * external code can call flush to synchronously force processing of currently buffered styles
+ */
+function flush() {
+    measure(function () {
+        var styleArrays = _themeState.runState.buffer.slice();
+        _themeState.runState.buffer = [];
+        var mergedStyleArray = [].concat.apply([], styleArrays);
+        if (mergedStyleArray.length > 0) {
+            applyThemableStyles(mergedStyleArray);
+        }
+    });
+}
+exports.flush = flush;
+/**
+ * register async loadStyles
+ */
+function asyncLoadStyles() {
+    return setTimeout(function () {
+        _themeState.runState.flushTimer = 0;
+        flush();
+    }, 0);
+}
+/**
+ * Loads a set of style text. If it is registered too early, we will register it when the window.load event
+ * is fired.
+ * @param {string} styleText Style to register.
+ * @param {IStyleRecord} styleRecord Existing style record to re-apply.
+ */
+function applyThemableStyles(stylesArray, styleRecord) {
+    if (_themeState.loadStyles) {
+        _themeState.loadStyles(resolveThemableArray(stylesArray).styleString, stylesArray);
+    }
+    else {
+        _injectStylesWithCssText ?
+            registerStylesIE(stylesArray, styleRecord) :
+            registerStyles(stylesArray);
+    }
+}
+/**
+ * Registers a set theme tokens to find and replace. If styles were already registered, they will be
+ * replaced.
+ * @param {theme} theme JSON object of theme tokens to values.
+ */
+function loadTheme(theme) {
+    _themeState.theme = theme;
+    // reload styles.
+    reloadStyles();
+}
+exports.loadTheme = loadTheme;
+/**
+ * Clear already registered style elements and style records in theme_State object
+ * @option: specify which group of registered styles should be cleared.
+ * Default to be both themable and non-themable styles will be cleared
+ */
+function clearStyles(option) {
+    if (option === void 0) { option = 3 /* all */; }
+    if (option === 3 /* all */ || option === 2 /* onlyNonThemable */) {
+        clearStylesInternal(_themeState.registeredStyles);
+        _themeState.registeredStyles = [];
+    }
+    if (option === 3 /* all */ || option === 1 /* onlyThemable */) {
+        clearStylesInternal(_themeState.registeredThemableStyles);
+        _themeState.registeredThemableStyles = [];
+    }
+}
+exports.clearStyles = clearStyles;
+function clearStylesInternal(records) {
+    records.forEach(function (styleRecord) {
+        var styleElement = styleRecord && styleRecord.styleElement;
+        if (styleElement && styleElement.parentElement) {
+            styleElement.parentElement.removeChild(styleElement);
+        }
+    });
+}
+/**
+ * Reloads styles.
+ */
+function reloadStyles() {
+    if (_themeState.theme) {
+        var themableStyles = [];
+        for (var _i = 0, _a = _themeState.registeredThemableStyles; _i < _a.length; _i++) {
+            var styleRecord = _a[_i];
+            themableStyles.push(styleRecord.themableStyle);
+        }
+        if (themableStyles.length > 0) {
+            clearStyles(1 /* onlyThemable */);
+            applyThemableStyles([].concat.apply([], themableStyles));
+        }
+    }
+}
+/**
+ * Find theme tokens and replaces them with provided theme values.
+ * @param {string} styles Tokenized styles to fix.
+ */
+function detokenize(styles) {
+    if (styles) {
+        styles = resolveThemableArray(splitStyles(styles)).styleString;
+    }
+    return styles;
+}
+exports.detokenize = detokenize;
+/**
+ * Resolves ThemingInstruction objects in an array and joins the result into a string.
+ * @param {ThemableArray} splitStyleArray ThemableArray to resolve and join.
+ */
+function resolveThemableArray(splitStyleArray) {
+    var theme = _themeState.theme;
+    var themable = false;
+    // Resolve the array of theming instructions to an array of strings.
+    // Then join the array to produce the final CSS string.
+    var resolvedArray = (splitStyleArray || []).map(function (currentValue) {
+        var themeSlot = currentValue.theme;
+        if (themeSlot) {
+            themable = true;
+            // A theming annotation. Resolve it.
+            var themedValue = theme ? theme[themeSlot] : undefined;
+            var defaultValue = currentValue.defaultValue || 'inherit';
+            // Warn to console if we hit an unthemed value even when themes are provided, but only if "DEBUG" is true.
+            // Allow the themedValue to be undefined to explicitly request the default value.
+            if (theme && !themedValue && console && !(themeSlot in theme) && "boolean" !== 'undefined' && true) {
+                console.warn("Theming value not provided for \"" + themeSlot + "\". Falling back to \"" + defaultValue + "\".");
+            }
+            return themedValue || defaultValue;
+        }
+        else {
+            // A non-themable string. Preserve it.
+            return currentValue.rawString;
+        }
+    });
+    return {
+        styleString: resolvedArray.join(''),
+        themable: themable
+    };
+}
+/**
+ * Split tokenized CSS into an array of strings and theme specification objects
+ * @param {string} styles Tokenized styles to split.
+ */
+function splitStyles(styles) {
+    var result = [];
+    if (styles) {
+        var pos = 0; // Current position in styles.
+        var tokenMatch = void 0; // tslint:disable-line:no-null-keyword
+        while (tokenMatch = _themeTokenRegex.exec(styles)) {
+            var matchIndex = tokenMatch.index;
+            if (matchIndex > pos) {
+                result.push({
+                    rawString: styles.substring(pos, matchIndex)
+                });
+            }
+            result.push({
+                theme: tokenMatch[1],
+                defaultValue: tokenMatch[2] // May be undefined
+            });
+            // index of the first character after the current match
+            pos = _themeTokenRegex.lastIndex;
+        }
+        // Push the rest of the string after the last match.
+        result.push({
+            rawString: styles.substring(pos)
+        });
+    }
+    return result;
+}
+exports.splitStyles = splitStyles;
+/**
+ * Registers a set of style text. If it is registered too early, we will register it when the
+ * window.load event is fired.
+ * @param {ThemableArray} styleArray Array of IThemingInstruction objects to register.
+ * @param {IStyleRecord} styleRecord May specify a style Element to update.
+ */
+function registerStyles(styleArray) {
+    var head = document.getElementsByTagName('head')[0];
+    var styleElement = document.createElement('style');
+    var _a = resolveThemableArray(styleArray), styleString = _a.styleString, themable = _a.themable;
+    styleElement.type = 'text/css';
+    styleElement.appendChild(document.createTextNode(styleString));
+    _themeState.perf.count++;
+    head.appendChild(styleElement);
+    var record = {
+        styleElement: styleElement,
+        themableStyle: styleArray
+    };
+    if (themable) {
+        _themeState.registeredThemableStyles.push(record);
+    }
+    else {
+        _themeState.registeredStyles.push(record);
+    }
+}
+/**
+ * Registers a set of style text, for IE 9 and below, which has a ~30 style element limit so we need
+ * to register slightly differently.
+ * @param {ThemableArray} styleArray Array of IThemingInstruction objects to register.
+ * @param {IStyleRecord} styleRecord May specify a style Element to update.
+ */
+function registerStylesIE(styleArray, styleRecord) {
+    var head = document.getElementsByTagName('head')[0];
+    var registeredStyles = _themeState.registeredStyles;
+    var lastStyleElement = _themeState.lastStyleElement;
+    var stylesheet = lastStyleElement ? lastStyleElement.styleSheet : undefined;
+    var lastStyleContent = stylesheet ? stylesheet.cssText : '';
+    var lastRegisteredStyle = registeredStyles[registeredStyles.length - 1];
+    var resolvedStyleText = resolveThemableArray(styleArray).styleString;
+    if (!lastStyleElement || (lastStyleContent.length + resolvedStyleText.length) > MAX_STYLE_CONTENT_SIZE) {
+        lastStyleElement = document.createElement('style');
+        lastStyleElement.type = 'text/css';
+        if (styleRecord) {
+            head.replaceChild(lastStyleElement, styleRecord.styleElement);
+            styleRecord.styleElement = lastStyleElement;
+        }
+        else {
+            head.appendChild(lastStyleElement);
+        }
+        if (!styleRecord) {
+            lastRegisteredStyle = {
+                styleElement: lastStyleElement,
+                themableStyle: styleArray
+            };
+            registeredStyles.push(lastRegisteredStyle);
+        }
+    }
+    lastStyleElement.styleSheet.cssText += detokenize(resolvedStyleText);
+    Array.prototype.push.apply(lastRegisteredStyle.themableStyle, styleArray); // concat in-place
+    // Preserve the theme state.
+    _themeState.lastStyleElement = lastStyleElement;
+}
+/**
+ * Checks to see if styleSheet exists as a property off of a style element.
+ * This will determine if style registration should be done via cssText (<= IE9) or not
+ */
+function shouldUseCssText() {
+    var useCSSText = false;
+    if (typeof document !== 'undefined') {
+        var emptyStyle = document.createElement('style');
+        emptyStyle.type = 'text/css';
+        useCSSText = !!emptyStyle.styleSheet;
+    }
+    return useCSSText;
+}
+
+//# sourceMappingURL=index.js.map
+
+/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./../../sp-build-web/node_modules/webpack/buildin/global.js */ "vicT")))
 
 /***/ }),
 

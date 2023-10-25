@@ -6,3 +6,12 @@ export interface IGridImagesProps {
   userDisplayName: string;
   urlAbsolute: string;
 }
+export interface ItemImages {
+  image: string;
+  label: string;
+  sizeWith: string;
+  backgroud: string;
+  order: number;
+  link: string;
+  typeLink: string;
+}
